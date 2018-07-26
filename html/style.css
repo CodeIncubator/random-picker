@@ -11,15 +11,19 @@ body {
 .container {
 	height: 100%;
 }
+.items {
+	display: block;
+	height: 300px;
+	overflow: scroll;
+	margin-bottom: 40px;
+	margin: 20px;
+}
 .heading {
 	width: 100%;
 	text-align: center;
 	margin-top: 40px;
 	font-size: 60px;
 	font-weight: 700;
-}
-.items {
-	margin: 20px;
 }
 .form-group {
 	width: 300px;
@@ -106,10 +110,4 @@ body {
 	transform: translateY(4px);
 	border-bottom-width: 2px;
 	box-shadow: none;
-}
-.items {
-	display: block;
-	height: 300px;
-	overflow: scroll;
-	margin-bottom: 40px;
 }
