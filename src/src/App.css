@@ -5,51 +5,62 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Sunflower";
-	background-color: #c7f3ff;
 	color: #155263;
 }
 .container {
 	height: 100%;
 }
 .items {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 1;
+	justify-content: center;
 	height: 300px;
 	overflow: scroll;
-	margin-bottom: 40px;
-	margin: 20px;
+	margin: 0;
+	margin-bottom:20px;
+	padding:40px;
+	background-color: #f0f0f0;
 }
 .heading {
 	width: 100%;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 0;
+	padding: 10px;
 	font-size: 60px;
 	font-weight: 700;
+	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
 }
 .form-group {
-	width: 300px;
+	width: 50%;
 	height: 70px;
-	background: #fff;
-	margin: 5% auto;
+	background: #a9a9a9;
+	margin: 3% auto;
 	display: flex;
 	align-items: center;
 	position: relative;
-	box-shadow: 0 3px 6px #989898;
+	box-shadow: 0 2px 6px #c8c8c8;
 	border-radius: 5px;
 }
 .form-group-item {
 	width: 220px;
 	height: 100px;
 	padding: 0 10px;
-	background: #2796cb;
-	border-radius: 15px 0 15px 15px;
+	background: #fefefe;
+	border-radius: 3px;
 	float: left;
 	font-size: 24px;
 	margin: 10px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 .form-group-item p {
 	margin: 15px 0;
 	text-align: center;
-	color: #fff;
+	color: #767676;
+	font-weight: 200;
 }
 .input {
 	height: 40px;
@@ -58,11 +69,21 @@ body {
 	font-size: 20px;
 	border: none;
 	outline: none;
+	background: transparent;
+	color: #FFF;
 }
-.input:focus {
-	border-bottom: 1px solid #bbb;
-	margin-top: 10px;
+
+input::placeholder{
+	font-weight: 200;
+	letter-spacing: 1.1px;
+	font-family: cursive;
+	color:#FFF;
 }
+
+input:focus::placeholder{
+	content: '';
+}
+
 .input:focus + .label {
 	font-size: 12px;
 	margin-top: -15px;
@@ -85,16 +106,14 @@ body {
 	margin-bottom: 20px;
 }
 .button {
-	padding: 15px;
+	padding: 15px 25px;
 	margin-right: 5px;
-	height: 50px;
-	min-width: 100px;
-	background: #ff6464;
+	background: #1E88E5;
 	border: none;
 	outline: none;
 	color: white;
 	font-family: inherit;
-	font-weight: 400;
+	font-weight: 100;
 	font-size: 20px;
 	border-radius: 3px;
 	box-shadow: 0 5px 0px #ff6464;
@@ -116,12 +135,12 @@ body {
 }
 .reset:hover{
 	background: #d1d1d1;
+	border-radius: 25px;
+	transition: all 0.5s;
 }
-.button:hover {
-	background: #ff6464;
-	box-shadow: 0 4px 1px #ff6464;
-	border-bottom: 2px solid #d85757;
-	transition: all 0.1s ease-in;
+.button:hover{
+	box-shadow: 0px 0px 10px #CCC;
+	cursor: pointer;
 }
 .button:active {
 	transform: translateY(4px);
@@ -130,6 +149,9 @@ body {
 }
 .green {
 	background-color: #27cb87;
+}
+.form-group-item.green p {
+	color: #FFFFFF;
 }
 .message {
 	width: 100%;
