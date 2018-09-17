@@ -12,7 +12,7 @@ Preview : https://yokesharun.github.io/random-picker/
  2. ~~Install Packages~~
  3. ~~Creation of HTML Template~~
  4. ~~Beta Version - React App~~
- 5. Add Clear or Reset Button
+ 5. ~~Add Clear or Reset Button~~
  6. Add eslint
  7. Improve Design
  8. Include analytics
