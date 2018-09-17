@@ -115,6 +115,26 @@ input:focus::placeholder{
 	font-family: inherit;
 	font-weight: 100;
 	font-size: 20px;
+	border-radius: 3px;
+	box-shadow: 0 5px 0px #ff6464;
+}
+.reset {
+	padding: 15px;
+	margin-right: 5px;
+	height: 50px;
+	min-width: 100px;
+	background: #d9d9d9;
+	border: none;
+	outline: none;
+	color: 999;
+	font-family: inherit;
+	font-weight: 400;
+	font-size: 20px;
+	border-radius: 3px;
+	box-shadow: 0 5px 0px #c9c9c9;
+}
+.reset:hover{
+	background: #d1d1d1;
 	border-radius: 25px;
 	transition: all 0.5s;
 }

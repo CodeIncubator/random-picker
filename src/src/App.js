@@ -40,6 +40,14 @@ class App extends Component {
 		);
 	}
 
+	handleClear = () => {
+		this.setState({
+			items: [],
+			message: "",
+			result: ""
+		});
+	}
+
 	render() {
 		const items = this.state.items.map(
 			(item, i) =>
@@ -66,6 +74,12 @@ class App extends Component {
 				<div className="message">{this.state.message}</div>
 				<div className="items">{items}</div>
 				<div className="center">
+					<input
+						className="reset"
+						type="button"
+						value="Reset"
+						onClick={() => this.handleClear()}
+					/>
 					<input
 						className="button"
 						type="button"
