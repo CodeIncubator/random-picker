@@ -6,6 +6,9 @@
 
 Preview : https://yokesharun.github.io/random-picker/
 
+Note :
+the `master` branch held the source code, and the `gh-pages` branch held the built app code.
+
 ## Random Picker Todo list
 
  1. ~~Application Setup~~
