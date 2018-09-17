@@ -55,13 +55,13 @@ class App extends Component {
 		);
 		return (
 			<div className="container">
-				<h1 className="heading">Pick me one!</h1>
+				<h1 className="heading">Best match maker</h1>
 				<div className="form-group">
 					<input
-						className="input"
-						onKeyDown={e => this.handleKeyPress(e)}
+						className="input" placeholder="Enter your choices"
+						onKeyDown={e => this.handleKeyPress(e)} style={{textAlign: "center"}}
 					/>
-					<label className="label">Enter Your Choice</label>
+					{/* <label className="label">Enter Your Choice</label> */}
 				</div>
 				<div className="message">{this.state.message}</div>
 				<div className="items">{items}</div>
