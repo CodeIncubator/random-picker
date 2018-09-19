@@ -20,24 +20,30 @@ class App extends Component {
 				});
 				e.target.value = "";
 			} else {
-				this.setState({
-					message: "You Don't have choice"
-				});
+				this.setMessage("You Don't have choices?");
 			}
 		}
 	}
 
 	handleLucky() {
 		const { items } = this.state;
-		this.setState({ message: "Finding best one for you..." });
-		const wait = time => new Promise(resolve => setTimeout(resolve, time));
+		if(items.length === 0){
+			this.setMessage("You Don't have choices?");
+		}else{
+			this.setMessage("Finding best one for you...");
+			const wait = time => new Promise(resolve => setTimeout(resolve, time));
 
-		wait(2000).then(() =>
-			this.setState({
-				result: Math.floor(Math.random() * items.length),
-				message: ""
-			})
-		);
+			wait(2000).then(() =>
+				this.setState({
+					result: Math.floor(Math.random() * items.length),
+					message: ""
+				})
+			);
+		}
+	}
+
+	setMessage(message){
+		this.setState({ message: message });
 	}
 
 	handleClear = () => {
@@ -63,29 +69,25 @@ class App extends Component {
 		);
 		return (
 			<div className="container">
-				<h1 className="heading">Best match maker</h1>
+				<h1 className="heading">Best Choice</h1>
 				<div className="form-group">
 					<input
-						className="input" placeholder="Enter your choices"
-						onKeyDown={e => this.handleKeyPress(e)} style={{textAlign: "center"}}
+						className="input" 
+						placeholder="Enter your choices"
+						onKeyDown={e => this.handleKeyPress(e)} 
+						style={{textAlign: "center"}}
 					/>
-					{/* <label className="label">Enter Your Choice</label> */}
 				</div>
-				<div className="message">{this.state.message}</div>
+				<div className="message"></div>
+				{
+					this.state.message && <div className="callout primary message">
+						<p>{this.state.message}</p>
+					</div>
+				}
 				<div className="items">{items}</div>
 				<div className="center">
-					<input
-						className="reset"
-						type="button"
-						value="Reset"
-						onClick={() => this.handleClear()}
-					/>
-					<input
-						className="button"
-						type="button"
-						value="I'm Feeling Lucky!"
-						onClick={() => this.handleLucky()}
-					/>
+					<button type="button" className="secondary button large" onClick={() => this.handleClear()}>Clear</button>
+					<button type="button" className="success button large" onClick={() => this.handleLucky()}>Find My Choice</button>
 				</div>
 			</div>
 		);
