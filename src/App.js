@@ -14,11 +14,15 @@ class App extends Component {
 	handleKeyPress(e) {
 		if (e.which === 13) {
 			if (e.target.value != "") {
-				this.setState({
-					items: this.state.items.concat(e.target.value),
-					message: ""
-				});
-				e.target.value = "";
+				if(this.state.items.length === 10){
+					this.setMessage("You have reached your limit!");
+				}else{
+					this.setState({
+						items: this.state.items.concat(e.target.value),
+						message: ""
+					});
+					e.target.value = "";
+				}
 			} else {
 				this.setMessage("You Don't have choices?");
 			}
