@@ -4,7 +4,9 @@
 
 :dolphin: Using Yarn
 
-Preview : https://yokesharun.github.io/random-picker/
+Preview : https://codeincubator.github.io/random-picker/
+
+![alt tag](https://github.com/codeincubator/random-picker/blob/master/public/img/best-choice.png)
 
 Note :
 the `master` branch held the source code, and the `gh-pages` branch held the built app code.
@@ -22,7 +24,3 @@ the `master` branch held the source code, and the `gh-pages` branch held the bui
  9. Include AI
  10. Testing
  11. Host it
-
-### Screenshots: 
-
-![alt tag](https://github.com/yokesharun/random-picker/blob/master/public/img/best-choice.png)
