@@ -29,6 +29,13 @@ class App extends Component {
 		}
 	}
 
+	handleRemoveItem(key){
+		console.log(key);
+		this.setState({
+			items : this.state.items.filter((_, i) => i !== key)
+		});
+	}
+
 	handleLucky() {
 		const { items } = this.state;
 		if(items.length === 0){
@@ -63,11 +70,18 @@ class App extends Component {
 			(item, i) =>
 				i === this.state.result ? (
 					<div key={i} className="form-group-item green">
-						<p>{item}</p>
+						<div>
+							<p>{item}</p>
+						</div>
 					</div>
 				) : (
 					<div key={i} className="form-group-item">
-						<p>{item}</p>
+						<div>
+							<p>{item}</p>
+						</div>
+						<div>
+						<a className="clear button alert" href="javascript:void(0);" onClick={() => this.handleRemoveItem(i)}>Remove</a>
+						</div>
 					</div>
 				)
 		);
