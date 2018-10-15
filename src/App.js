@@ -46,7 +46,7 @@ class App extends Component {
 		this.setState({ message: message });
 	}
 
-	handleClear = () => {
+	handleClear () {
 		this.setState({
 			items: [],
 			message: "",
