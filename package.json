@@ -2,7 +2,7 @@
   "name": "random-picker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://yokesharun.github.io/random-picker",
+  "homepage": "https://codeincubator.github.io/random-picker/",
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -17,6 +17,7 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "eslint": "^5.7.0",
     "gh-pages": "^2.0.0"
   }
 }

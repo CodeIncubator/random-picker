@@ -4,7 +4,7 @@
 
 :dolphin: Using Yarn
 
-Preview : https://yokesharun.github.io/random-picker/
+Preview : https://codeincubator.github.io/random-picker/
 
 ![alt tag](https://github.com/yokesharun/random-picker/blob/master/public/img/best-choice.png)
 
@@ -18,7 +18,7 @@ the `master` branch held the source code, and the `gh-pages` branch held the bui
  3. ~~Creation of HTML Template~~
  4. ~~Beta Version - React App~~
  5. ~~Add Clear or Reset Button~~
- 6. Add eslint
+ 6. ~~Add eslint~~
  7. Improve Design
  8. Include analytics
  9. Include AI
