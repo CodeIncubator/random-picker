@@ -20,9 +20,9 @@ the `master` branch held the source code, and the `gh-pages` branch held the bui
 * ~~Add Clear or Reset Button~~
 * ~~Set option limit to 10~~
 * ~~Delete Options~~
-* Add eslint
+* ~~Add eslint~~
 * Improve Design
 * Include analytics
-* Include AI
+* Include Advanced Analytics on Choice
 * Testing
 * ~~Host it~~
