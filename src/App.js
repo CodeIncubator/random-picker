@@ -14,15 +14,26 @@ class App extends Component {
 	handleKeyPress(e) {
 		if (e.which === 13) {
 			if (e.target.value != "") {
-				this.setState({
-					items: this.state.items.concat(e.target.value),
-					message: ""
-				});
-				e.target.value = "";
+				if(this.state.items.length === 10){
+					this.setMessage("You have reached your limit!");
+				}else{
+					this.setState({
+						items: this.state.items.concat(e.target.value),
+						message: ""
+					});
+					e.target.value = "";
+				}
 			} else {
 				this.setMessage("You Don't have choices?");
 			}
 		}
+	}
+
+	handleRemoveItem(key){
+		console.log(key);
+		this.setState({
+			items : this.state.items.filter((_, i) => i !== key)
+		});
 	}
 
 	handleLucky() {
@@ -59,11 +70,18 @@ class App extends Component {
 			(item, i) =>
 				i === this.state.result ? (
 					<div key={i} className="form-group-item green">
-						<p>{item}</p>
+						<div>
+							<p>{item}</p>
+						</div>
 					</div>
 				) : (
 					<div key={i} className="form-group-item">
-						<p>{item}</p>
+						<div>
+							<p>{item}</p>
+						</div>
+						<div>
+						<a className="clear button alert" href="javascript:void(0);" onClick={() => this.handleRemoveItem(i)}>Remove</a>
+						</div>
 					</div>
 				)
 		);
