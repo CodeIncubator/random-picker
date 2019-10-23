@@ -80,14 +80,20 @@ class App extends Component {
 							<p>{item}</p>
 						</div>
 						<div>
-						<a className="clear button alert" href="javascript:void(0);" onClick={() => this.handleRemoveItem(i)}>Remove</a>
+						<a 
+							className="clear button alert" 
+							href="javascript:void(0);" o
+							nClick={() => this.handleRemoveItem(i)}
+						>
+								Remove
+						</a>
 						</div>
 					</div>
 				)
 		);
 		return (
 			<div className="container">
-				<h1 className="heading">Best Choice</h1>
+				<h1 className="heading">Random Picker</h1>
 				<div className="form-group">
 					<input
 						className="input" 

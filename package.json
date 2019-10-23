@@ -16,7 +16,6 @@
     "deploy": "npm run build && gh-pages -d build"
   },
   "devDependencies": {
-    "eslint": "^5.7.0",
     "gh-pages": "^2.0.0"
   },
   "browserslist": {
