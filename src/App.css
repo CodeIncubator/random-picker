@@ -7,6 +7,7 @@ body {
     font-family: "Sunflower";
     color: #15632f;
     background-color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     height: 100%;
@@ -25,6 +26,8 @@ body {
 }
 .heading {
     width: 100%;
+    background-color: #2c632f;
+    color: #fff;
     text-align: center;
     margin-top: 0;
     padding: 10px;
@@ -35,7 +38,7 @@ body {
 .form-group {
     width: 50%;
     height: 70px;
-    background: #a9a9a9;
+    background: #3e8a43;;
     margin: 3% auto;
     display: flex;
     align-items: center;

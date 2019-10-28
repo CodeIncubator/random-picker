@@ -100,6 +100,7 @@ class App extends Component {
 						placeholder="Enter your choices"
 						onKeyDown={e => this.handleKeyPress(e)} 
 						style={{textAlign: "center"}}
+						autoFocus
 					/>
 				</div>
 				<div className="message"></div>
