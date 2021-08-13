@@ -13,7 +13,7 @@ class App extends Component {
 
 	handleKeyPress(e) {
 		if (e.which === 13) {
-			if (e.target.value != "") {
+			if (e.target.value !== "") {
 				if(this.state.items.length === 10){
 					this.setMessage("You have reached your limit!");
 				}else{
@@ -87,12 +87,12 @@ class App extends Component {
 		);
 		return (
 			<div className="container">
-				<h1 className="heading">Best Choice</h1>
+				<h1 className="heading">Random Picker</h1>
 				<div className="form-group">
 					<input
-						className="input" 
+						className="input"
 						placeholder="Enter your choices"
-						onKeyDown={e => this.handleKeyPress(e)} 
+						onKeyDown={e => this.handleKeyPress(e)}
 						style={{textAlign: "center"}}
 					/>
 				</div>
