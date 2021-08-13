@@ -75,18 +75,12 @@ class App extends Component {
 						</div>
 					</div>
 				) : (
-					<div key={i} className="form-group-item">
+					<div key={i} className="form-group-item p-rel">
 						<div>
 							<p>{item}</p>
 						</div>
-						<div>
-						<a 
-							className="clear button alert" 
-							href="javascript:void(0);" o
-							nClick={() => this.handleRemoveItem(i)}
-						>
-								Remove
-						</a>
+						<div className="removeBtnWrapper" onClick={() => this.handleRemoveItem(i)}>
+							<a className="clear button alert no-pad">X</a>
 						</div>
 					</div>
 				)
