@@ -26,3 +26,5 @@ the `master` branch held the source code, and the `gh-pages` branch held the bui
 * Include Advanced Analytics on Choice
 * Testing
 * ~~Host it~~
+
+Note: Hacktoberfest Contributes are welcome to contribute 
