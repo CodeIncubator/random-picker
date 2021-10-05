@@ -13,11 +13,7 @@ class App extends Component {
 
 	handleKeyPress(e) {
 		if (e.which === 13) {
-<<<<<<< HEAD
-			if (e.target.value != '') {
-=======
 			if (e.target.value !== "") {
->>>>>>> c3f17b39dea9615ef39b1cee26af5217ff747d4f
 				if(this.state.items.length === 10){
 					this.setMessage('You have reached your limit!');
 				}else{
@@ -83,19 +79,8 @@ class App extends Component {
 						<div>
 							<p>{item}</p>
 						</div>
-<<<<<<< HEAD
-						<div>
-							<a 
-								className="clear button alert" 
-								href="javascript:void(0);"
-								onClick={() => this.handleRemoveItem(i)}
-							>
-									Remove
-							</a>
-=======
 						<div className="removeBtnWrapper" onClick={() => this.handleRemoveItem(i)}>
 							<a className="clear button alert no-pad">X</a>
->>>>>>> c3f17b39dea9615ef39b1cee26af5217ff747d4f
 						</div>
 					</div>
 				)
@@ -105,17 +90,10 @@ class App extends Component {
 				<h1 className="heading">Random Picker</h1>
 				<div className="form-group">
 					<input
-<<<<<<< HEAD
-						className="input text-center" 
-						placeholder="Enter your choices"
-						onKeyDown={e => this.handleKeyPress(e)} 
-						autoFocus
-=======
-						className="input"
+						className="input text-center"
 						placeholder="Enter your choices"
 						onKeyDown={e => this.handleKeyPress(e)}
-						style={{textAlign: "center"}}
->>>>>>> c3f17b39dea9615ef39b1cee26af5217ff747d4f
+						autoFocus
 					/>
 				</div>
 				<div className="message"></div>
