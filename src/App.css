@@ -4,7 +4,7 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    font-family: "Sunflower";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #15632f;
     background: rgb(255,119,119);
     background: linear-gradient(194deg, rgba(255,119,119,1) 48%, rgba(245,198,165,1) 100%);
@@ -12,6 +12,12 @@ body {
 }
 html{
     height: 100%;
+}
+.no-pad{
+    padding:0;
+}
+.p-rel{
+    position: relative;
 }
 .container {
     height: 100%;
@@ -127,4 +133,17 @@ input:focus::placeholder {
 }
 .text-center{
     text-align: center;
+}
+.removeBtnWrapper{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: white;
+    box-shadow: 0px 0px 6px #aaa;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
 }
