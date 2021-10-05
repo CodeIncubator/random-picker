@@ -6,7 +6,12 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #15632f;
-    background-color: #fff;
+    background: rgb(255,119,119);
+    background: linear-gradient(194deg, rgba(255,119,119,1) 48%, rgba(245,198,165,1) 100%);
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    height: 100%;
 }
 .no-pad{
     padding:0;
@@ -27,21 +32,20 @@ body {
     margin: 0;
     margin-bottom: 20px;
     padding: 40px;
-    background-color: #f9fffb;
+    background-color: inherit;
 }
 .heading {
     width: 100%;
+    color: #ffffff;
     text-align: center;
-    margin-top: 0;
-    padding: 10px;
-    font-size: 60px;
+    margin: 1.5em 0;
+    font-size: 3em;
     font-weight: 700;
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .form-group {
     width: 50%;
     height: 70px;
-    background: #a9a9a9;
+    background: #fff;;
     margin: 3% auto;
     display: flex;
     align-items: center;
@@ -77,13 +81,13 @@ body {
     border: none;
     outline: none;
     background: transparent;
-    color: #FFF;
+    color: #852747;
 }
 input::placeholder {
     font-weight: 200;
     letter-spacing: 1.1px;
     font-family: cursive;
-    color: #FFF;
+    color: #852747;
 }
 input:focus::placeholder {
     content: '';
@@ -116,6 +120,18 @@ input:focus::placeholder {
     color: #FFFFFF;
 }
 .message {
+    text-align: center;
+    background-color: transparent;
+}
+.button.success{
+    background-color: #852747;
+    color: #e2e2e2;
+}
+.button.success:focus, .button.success:hover{
+    background-color: #A2416B;
+    color: #e2e2e2;
+}
+.text-center{
     text-align: center;
 }
 .removeBtnWrapper{
