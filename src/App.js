@@ -13,7 +13,7 @@ class App extends Component {
 
 	handleKeyPress(e) {
 		if (e.which === 13) {
-			if (e.target.value !== "") {
+			if (e.target.value !== '') {
 				if(this.state.items.length === 10){
 					this.setMessage('You have reached your limit!');
 				}else{
