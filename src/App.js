@@ -1,30 +1,30 @@
-import React, { Component } from "react";
-import "./App.css";
+import React, { Component } from 'react';
+import './App.css';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			items: [],
-			message: "",
-			result: ""
+			message: '',
+			result: ''
 		};
 	}
 
 	handleKeyPress(e) {
 		if (e.which === 13) {
-			if (e.target.value != "") {
+			if (e.target.value != '') {
 				if(this.state.items.length === 10){
-					this.setMessage("You have reached your limit!");
+					this.setMessage('You have reached your limit!');
 				}else{
 					this.setState({
 						items: this.state.items.concat(e.target.value),
-						message: ""
+						message: ''
 					});
-					e.target.value = "";
+					e.target.value = '';
 				}
 			} else {
-				this.setMessage("You Don't have choices?");
+				this.setMessage('You Dont have choices?');
 			}
 		}
 	}
@@ -39,15 +39,15 @@ class App extends Component {
 	handleLucky() {
 		const { items } = this.state;
 		if(items.length === 0){
-			this.setMessage("You Don't have choices?");
+			this.setMessage('You Dont have choices?');
 		}else{
-			this.setMessage("Finding best one for you...");
+			this.setMessage('Finding best one for you...');
 			const wait = time => new Promise(resolve => setTimeout(resolve, time));
 
 			wait(2000).then(() =>
 				this.setState({
 					result: Math.floor(Math.random() * items.length),
-					message: ""
+					message: ''
 				})
 			);
 		}
@@ -60,8 +60,8 @@ class App extends Component {
 	handleClear () {
 		this.setState({
 			items: [],
-			message: "",
-			result: ""
+			message: '',
+			result: ''
 		});
 	}
 
@@ -80,13 +80,13 @@ class App extends Component {
 							<p>{item}</p>
 						</div>
 						<div>
-						<a 
-							className="clear button alert" 
-							href="javascript:void(0);" o
-							nClick={() => this.handleRemoveItem(i)}
-						>
-								Remove
-						</a>
+							<a 
+								className="clear button alert" 
+								href="javascript:void(0);"
+								onClick={() => this.handleRemoveItem(i)}
+							>
+									Remove
+							</a>
 						</div>
 					</div>
 				)
@@ -96,10 +96,9 @@ class App extends Component {
 				<h1 className="heading">Random Picker</h1>
 				<div className="form-group">
 					<input
-						className="input" 
+						className="input text-center" 
 						placeholder="Enter your choices"
 						onKeyDown={e => this.handleKeyPress(e)} 
-						style={{textAlign: "center"}}
 						autoFocus
 					/>
 				</div>
