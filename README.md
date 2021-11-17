@@ -6,7 +6,7 @@
 
 Preview : https://codeincubator.github.io/random-picker/
 
-![alt tag](https://github.com/codeincubator/random-picker/blob/master/public/img/best-choice.png)
+![alt tag](https://github.com/CodeIncubator/random-picker/blob/master/public/img/choice-screenshot.png)
 
 Note :
 the `master` branch held the source code, and the `gh-pages` branch held the built app code.
