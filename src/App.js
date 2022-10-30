@@ -79,8 +79,14 @@ class App extends Component {
 						<div>
 							<p>{item}</p>
 						</div>
-						<div className="removeBtnWrapper" onClick={() => this.handleRemoveItem(i)}>
-							<a className="clear button alert no-pad">X</a>
+						<div>
+							<a 
+								className="clear button alert" 
+								href="javascript:void(0);"
+								onClick={() => this.handleRemoveItem(i)}
+							>
+									Remove
+							</a>
 						</div>
 					</div>
 				)
