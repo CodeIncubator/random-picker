@@ -6,8 +6,8 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #15632f;
-    background: rgb(255,119,119);
-    background: linear-gradient(194deg, rgba(255,119,119,1) 48%, rgba(245,198,165,1) 100%);
+    background: rgb(128,197,255);
+    background: linear-gradient(194deg, rgba(128,197,255,1) 48%, rgba(182,255,250,1) 100%);
     font-family: 'Roboto', sans-serif;
 }
 html{
@@ -81,13 +81,13 @@ html{
     border: none;
     outline: none;
     background: transparent;
-    color: #852747;
+    color: #80B3FF;
 }
 input::placeholder {
     font-weight: 200;
     letter-spacing: 1.1px;
     font-family: cursive;
-    color: #852747;
+    color: #80B3FF;
 }
 input:focus::placeholder {
     content: '';
@@ -124,12 +124,10 @@ input:focus::placeholder {
     background-color: transparent;
 }
 .button.success{
-    background-color: #852747;
-    color: #e2e2e2;
+    background-color: #80B3FF;
 }
 .button.success:focus, .button.success:hover{
-    background-color: #A2416B;
-    color: #e2e2e2;
+    background-color: #687EFF;
 }
 .text-center{
     text-align: center;
