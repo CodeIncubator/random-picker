@@ -79,13 +79,13 @@ class App extends Component {
 						<div>
 							<p>{item}</p>
 						</div>
-						<div>
+						<div className='removeIcon'>
 							<a 
 								className="clear button alert" 
 								href="javascript:void(0);"
 								onClick={() => this.handleRemoveItem(i)}
 							>
-									Remove
+								X
 							</a>
 						</div>
 					</div>
