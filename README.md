@@ -9,7 +9,7 @@ Preview : https://codeincubator.github.io/random-picker/
 ![alt tag](https://github.com/CodeIncubator/random-picker/blob/master/public/img/choice-screenshot.png)
 
 Note :
-the `master` branch held the source code, and the `gh-pages` branch held the built app code.
+the `master` branch holds the source code, and the `gh-pages` branch holds the built app code.
 
 ## Random Picker Todo list
 
