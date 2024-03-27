@@ -15,7 +15,7 @@ class App extends Component {
 		if (e.which === 13) {
 			if (e.target.value !== '') {
 				if(this.state.items.length === 10){
-					this.setMessage('You have reached your limit!');
+					this.setMessage('Only 10 options you can add!');
 				}else{
 					this.setState({
 						items: this.state.items.concat(e.target.value),
